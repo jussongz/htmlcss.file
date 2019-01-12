@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Form Basic</title>
     <style type="text/css">
-        input { display:block; }
+        input {
+            display: block;
+        }
     </style>
 </head>
+
 <body>
-    <form action="" method="" enctype="">
-        <!-- ����ڰ� �Է��ϴ� �Է� ��� -->
+    <!--값 지정한 다음 submit하면 action에 있는 주소로 이동-->
+    <form action="https://www.naver.com/" method="GET" enctype="">
 
-        <!-- ȭ�鿡 ǥ�� ���� ���� -->
 
-        <!-- ��ư -->
+        <!-- 사용자가 입력하는 입력 양식 -->
+        <!--type, name 필수, value 선택 (기본 값으로 지정)-->
+        <!--값을 넣을때는 name-->
+        <input type="text" name="query" value="abc">
+        <input type="password" name="pw" value="123">
+        <input type="submit" value="전송">
+        <input type="image" src="../images/1.jpg" alt="">
+</form>
+<form action="https://www.daum.net/" method="GET" enctype="">
+
+        <!-- 화면에 표시 되지 않음 -->
+        <input type="hidden" name="hidden" value="hidden">
+
+        <!-- 버튼 -->
+        <input type="submit" value="전송">
+        <input type="button" value="버튼">
+        <input type="reset" value="리셋">
+        <input type="image" src="https://t1.daumcdn.net/daumtop_chanel/op/20170315064553027.png">
     </form>
 </body>
+
 </html>

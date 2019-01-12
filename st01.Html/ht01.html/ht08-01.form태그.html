@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
 
     <!--form 태그-->
-    <h2>네이버에서 "멕시코" 검색 요청하기</h2>
-    <form>
+    <h2>네이버에서 "폴킴" 검색 요청하기</h2>
+    <!--https://search.naver.com/search.naver?query=폴킴-->
+    <!--주소창에 query이기 때문에 input name에 query로 작성-->
+    <form action="https://search.naver.com/search.naver" method="get">
+        <input type="text" name="query" value="폴킴">
+        <input type="submit" value="전송">
     </form>
     <hr />
 
-    <h2>다음에서 "멕시코" 검색 요청하기</h2>
-    <form>
+    <h2>다음에서 "폴킴" 검색 요청하기</h2>
+    <!--https://search.daum.net/search?q=폴킴-->
+    <!--주소창에 q이기 때문에 input name에 q로 작성-->
+    <form action="https://search.daum.net/search" method="get">
+        <input type="text" name="q" value="폴킴">
+        <input type="submit" value="전송">
     </form>
     <hr />
 
 
     <h2>네이버 post 요청</h2>
-    <form>
-    </form>
+    <!--https://search.naver.com/search.naver?query=폴킴-->
+    <form action="https://search.naver.com/search.naver" method="post"></form>
+    <input type="text" name="query" value="폴킴">
+    <input type="submit" value="전송">
     <hr />
 
 </body>
+
 </html>
