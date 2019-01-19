@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title></title>
     <style>
-        *       { border-radius: 10px;          }
-        header  { border: 1px dotted orange;    }
-        article { border: 1px dotted lightblue; }
-        aside   { border: 1px dotted violet;    }
-        footer  { border: 1px dotted pink;      }
+        * {
+            border-radius: 10px;
+        }
+
+        header {
+            border: 1px dotted orange;
+        }
+
+        nav {
+            text-align: center;
+            border: 1px dotted gray;
+            margin: 15px;
+        }
+
+        article {
+            border: 1px dotted lightblue;
+            display: inline-block;
+            width: 75%;
+            float: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+
+        aside {
+            border: 1px dotted rgb(121, 39, 121);
+            display: inline-block;
+            width: 22%;
+            float: right;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 80px;
+        }
+
+        footer {
+            border: 1px dotted rgb(175, 73, 90);
+            clear: both;
+            height: 50px;
+        }
     </style>
 </head>
+
 <body>
+    <header>
+        header
+        <nav>
+            nav
+        </nav>
+    </header>
+
+    <!--박스 나눌때는 div 태그-->
+    <div>
+        <article>
+            article
+        </article>
+
+        <aside>
+            aside
+        </aside>
+    </div>
+
+    <footer>
+        footer
+    </footer>
 </body>
+
 </html>
